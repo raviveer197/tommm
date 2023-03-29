@@ -1,0 +1,932 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.item {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+}
+
+.item1 {
+    height: 1vh;
+    background-color: #022145;
+    position: relative;
+    animation-name: tommy;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.item2 {
+    height: 1vh;
+    background-color: white;
+    position: relative;
+    animation-name: tommy;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.item3 {
+    height: 1vh;
+    background-color: #cc0c2f;
+    position: relative;
+    animation-name: tommy;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.item4 {
+    height: 1vh;
+    background-color: #022145;
+    position: relative;
+    animation-name: tommy;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes tommy {
+    from {
+        top: 0px;
+        height: 25vh;
+    }
+
+    to {}
+}
+
+header {
+    /* padding: 20px 0px; */
+    display: flex;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 4vh;
+    left: 0px;
+    z-index: 3;
+}
+
+.header-section {
+    display: flex;
+    gap: 3vw;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5vw;
+    font-size: 18px;
+}
+
+.equal {
+    font-size: 40px;
+}
+
+.equal:hover {
+    font-size: 60px;
+    color: rgb(65, 63, 63);
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #374975;
+}
+
+nav ul li a:hover {
+    color: #cc0c2f;
+}
+
+.find a {
+    color: #a9a9a9;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.find a:hover {
+    color: rgb(15, 15, 15);
+}
+
+.search-block {
+    cursor: pointer;
+}
+
+.search :first-child {
+    width: 1.2vw;
+    height: 2.4vh;
+    background-image: url("https://icon-library.com/images/search-icon-jpg/search-icon-jpg-18.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.search :last-child {
+    display: none;
+    color: #bcbcbc;
+    font-size: 20px;
+}
+
+form {
+    height: 100vh;
+    background-color: whitesmoke;
+    width: 80vw;
+    z-index: 12;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    display: none;
+}
+
+.logo {
+    width: 20vw;
+    height: 6vh;
+    /* background-color: #cc0c2f; */
+    background-image: url("https://global.tommy.com/tommy-global-images/header/th-logo.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+@media screen and (min-width:300px) and (max-width:581px) {
+    .find {
+        display: none;
+    }
+
+    .aaa {
+        display: none;
+    }
+
+    .logo {
+        width: 65vw;
+        height: 5vh;
+        /* background-color: #cc0c2f; */
+    }
+
+    .search :first-child {
+        width: 20px;
+        height: 20px;
+    }
+
+    .equal {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        position: absolute;
+        height: 50vh;
+        left: -100vw;
+        background-color: rgb(247, 239, 239);
+        width: 100%;
+        top: 15vh;
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+
+    nav ul {
+        width: 100%;
+        height: 36vh;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .equal:hover+nav {
+        left: 0px;
+        z-index: 12;
+    }
+}
+
+.home-img {
+    width: 100vw;
+    height: 110vh;
+    background-color: #022145;
+    background-image: url("1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+.article :first-child {
+    color: white;
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+.article :last-child {
+    color: white;
+}
+
+@media screen and (min-width:300px) and (max-width:581px) {
+    .home-img {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .article :first-child {
+        font-size: 40px;
+    }
+
+    .article :last-child {
+        font-size: 14px;
+    }
+}
+
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    gap: 7vh;
+}
+
+.content :first-child {
+    font-size: 26px;
+    font-weight: lighter;
+    color: #00174f;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+}
+
+.content :last-child {
+    width: 15vw;
+    height: 7vh;
+    background-color: #00174f;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+}
+
+.content :last-child:hover {
+    background-color: white;
+    color: #00174f;
+    font-weight: bolder;
+    border: 1px solid #00174f;
+}
+
+@media screen and (min-width:300px) and (max-width:581px) {
+    .content-section {
+        height: 50vh;
+    }
+
+    .content :first-child {
+        font-size: 20px;
+    }
+
+    .content :last-child {
+        width: 20vh;
+        height: 6vh;
+        padding-top: 18px;
+    }
+}
+
+.sec-home-img {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.img-section {
+    width: 65vw;
+    height: 100vh;
+    /* background-color: #cc0c2f; */
+    background-image: url("2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.style-first {
+    background-color: #f5f5f5;
+    width: 35vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.style-sec {
+    width: 15vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.style-sec :nth-child(1) {
+    font-size: 25px;
+    color: #00174f;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.style-sec :nth-child(2) {
+    color: #00164f9c;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.style-sec :nth-child(3) {
+    width: 15vw;
+    height: 7vh;
+    background-color: #00174f;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+.style-sec :nth-child(3):hover {
+    background-color: white;
+    color: #00174f;
+    border: 1px solid #00174f;
+    font-weight: bolder;
+}
+
+@media screen and (min-width:300px) and (max-width:581px) {
+    .sec-home-img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-section {
+        width: 100%;
+    }
+
+    .style-first {
+        width: 100%;
+    }
+
+    .style-sec {
+        width: 80%;
+    }
+
+    .style-sec :nth-child(3) {
+        width: 50vw;
+        height: 6vh;
+        padding-top: 18px;
+    }
+}
+
+.high {
+    width: 100%;
+    height: 65vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.high p {
+    padding-left: 10vw;
+    color: #cbcfdb;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.cool-sec {
+    width: 100%;
+    height: 100vh;
+    background-color: #bcbcbc;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.women-sec {
+    position: relative;
+    width: 40vw;
+    height: 100vh;
+    background-color: #00174f;
+    bottom: 20vh;
+}
+
+.women-sec :first-child {
+    position: absolute;
+    width: 40vw;
+    height: 100vh;
+    right: 1vw;
+    bottom: 2vh;
+    background-image: url("https://global.tommy.com/tommy-global-images/home-page/_size_1060x1400/E_Homepage_collection_module_women_1060x1400.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.women-sec :last-child {
+    position: absolute;
+    bottom: 20vh;
+    left: 13vw;
+    height: 7vh;
+    width: 35vh;
+    background-color: white;
+    color: #00174f;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.women-sec :last-child:hover {
+    color: white;
+    background-color: #cc0c2f;
+}
+
+.men-sec {
+    position: relative;
+    width: 40vw;
+    height: 100vh;
+    background-color: #cc0c2f;
+    top: 20vh;
+}
+
+.men-sec :first-child {
+    position: absolute;
+    width: 40vw;
+    height: 100vh;
+    right: 1vw;
+    bottom: 2vh;
+    background-image: url("4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.men-sec :last-child {
+    position: absolute;
+    bottom: 20vh;
+    left: 13vw;
+    height: 7vh;
+    width: 35vh;
+    background-color: white;
+    color: #00174f;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.men-sec :last-child:hover {
+    color: white;
+    background-color: #cc0c2f;
+}
+
+.space {
+    width: 100%;
+    height: 30vh;
+    background-color: white;
+}
+
+@media screen and (min-width:300px) and (max-width:581px) {
+    .high {
+        height: 30vh;
+    }
+
+    .cool-sec {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .women-sec {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        bottom: 0px;
+    }
+
+    .women-sec :first-child {
+        position: absolute;
+        width: 90%;
+        height: 52.5vh;
+        right: 5vw;
+    }
+
+    .women-sec :last-child {
+        position: absolute;
+        bottom: 5vh;
+        padding-top: 25px;
+    }
+
+    .men-sec {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        top: 0px;
+    }
+
+    .men-sec :first-child {
+        position: absolute;
+        width: 90%;
+        height: 52.5vh;
+        right: 5vw;
+        top: 4vh;
+    }
+
+    .men-sec :last-child {
+        position: absolute;
+        bottom: 5vh;
+        padding-top: 25px;
+    }
+
+    .space {
+        height: 10vh;
+    }
+}
+
+.back-sec {
+    display: flex;
+    height: 100vh;
+
+}
+
+.back-img {
+    width: 65vw;
+    height: 100vh;
+    background-image: url("5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width:300px) and (max-width:581px) {
+    .back-sec {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .back-img {
+        width: 100%;
+    }
+}
+
+.space-sec {
+    width: 100%;
+    height: 15vh;
+    color: white;
+}
+
+.kid {
+    width: 100%;
+    height: 100vh;
+    background-image: url("6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kid-cool {
+    width: 50vw;
+    height: 40vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: white;
+    font-weight: bolder;
+}
+
+@media screen and (min-width:300px) and (max-width:581px) {
+    .space-sec {
+        height: 5vh;
+    }
+
+    .kid {
+        width: 100%;
+        height: 26vh;
+    }
+
+    .kid-cool {
+        font-size: 30px;
+    }
+}
+
+.our-text {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our {
+    width: 70vw;
+    height: 60vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8vh;
+}
+
+.our div p {
+    color: #00174f;
+    font-size: 28px;
+    word-spacing: 3px;
+}
+
+.ex {
+    width: 15vw;
+    height: 7vh;
+    padding-top: 15px;
+    background-color: #00174f;
+    color: white;
+    text-align: center;
+}
+
+.ex:hover {
+    background-color: white;
+    font-weight: bolder;
+    color: #022145;
+    border: 1px solid #00174f;
+}
+
+@media screen and (min-width:300px) and (max-width:581px) {
+    .our-text {
+        height: 50vh;
+    }
+
+    .our {
+        height: 50vh;
+    }
+
+    .our div p {
+        font-size: 24px;
+    }
+
+    .ex {
+        width: 20vh;
+        height: 6vh;
+        padding-top: 18px;
+    }
+}
+
+.about {
+    height: 20vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us p {
+    font-size: 30px;
+    color: #00174f;
+    font-weight: bolder;
+}
+
+.back-img-sec {
+    width: 100vw;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-back-sec {
+    display: flex;
+    width: 80vw;
+    height: 60vh;
+    border-right: 1px solid black;
+}
+
+.main {
+    width: 30vw;
+    height: 60vh;
+    background-color: #00174f;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main p {
+    font-size: 20px;
+}
+
+.main p a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.main p a:hover {
+    border-bottom: 2px solid white;
+    font-size: 15px;
+}
+
+.main-img {
+    width: 50vw;
+    height: 60vh;
+    background-image: url("7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (min-width:300px) and (max-width:581px) {
+    .back-img-sec{
+        height: 70vh;
+    }
+    .img-back-sec{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main{
+        width: 80vw;
+    }
+    .main-img{
+        width: 80vw;
+    }
+    .main p{
+        font-size: 17px;
+    }
+}
+.tom{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tom-text p{
+    font-size: 40px;
+    color: #00174f;
+}
+.gp{
+    width: 100%;
+    height: 75vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gp-img{
+    width: 80vw;
+    height: 70vh;
+    background-color: #bcbcbc;
+}
+.gp-img div{
+    width: 80vw;
+    height: 60vh;
+    background-image: url("8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (min-width:300px) and (max-width:581px) {
+    .tom{
+        height: 15vh;
+    }
+    .tom-text p{
+        font-size: 20px;
+    }
+    .gp{
+        height: 55vh;
+    }
+    .gp-img{
+        height: 50vh;
+    }
+    .gp-img{
+        height: 40vh;
+    }
+}
+footer{
+    width: 100%;
+    height: 80vh;
+    background-color: #00174f;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 6vh;
+}
+.footer-sec{
+    display: flex;
+    flex-direction: column;
+   gap: 10vh;
+    height: 40vh;
+}
+.footer-img{
+    background-color: aqua;
+    width: 20vw;
+    height: 6vh;
+    background-image: url("TOMMY FOOTER LOGO.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 10px; */
+}
+select{
+    background-color: #00174f;
+    height: 7vh;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-top: 2px solid white ;
+}
+.footer-sec p a{
+    font-size: 20px;
+    color: white;
+}
+.footer-sec-sec{
+    display: flex;
+    gap: 7vw;
+}
+.footer-article{
+    display: flex;
+    flex-direction: column;
+    gap: 4.5vh;
+}
+.footer-head{
+    font-size: 22px;
+    color: white;
+    font-weight: bolder;
+}
+.footer-nav ul{
+    display: flex;
+    flex-direction: column;
+}
+.footer-nav ul li a{
+    color: white;
+}
+.footer-nav ul li a:hover{
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+@media screen and (min-width:300px) and (max-width:581px) {
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 60vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .footer-img{
+        display: none;
+    }
+    .footer-sec{
+        height: 15vh;
+        gap: 3vh;
+    }
+    .footer-sec-sec{
+        flex-wrap: wrap;
+    }
+    .footer-article{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-head{
+        font-size: 18px;
+    }
+    .footer-nav ul{
+        display: block;
+        flex-direction: column;
+        height: 10vh;
+
+    }
+}
+.footer-end{
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #cc0c2f;
+    padding: 0px;
+}
+.footer-end :first-child{
+    color: white;
+}
+.footer-end :last-child{
+    color: white;
+    font-size: 16px;
+}
+.footer-end nav ul li a:hover{
+    border-bottom: 2px solid white;
+}
